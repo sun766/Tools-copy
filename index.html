@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="images/global/favicon.png">
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/tool.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <script src="js/tool.js"></script>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/global.js"></script>
+</head>
+<script>
+    window.onload= function(){
+        //获取图片标签
+        var pic = document.getElementById("pic");
+        var imgArr= pic.getElementsByTagName("img");
+        animate(imgArr[1],{"left":230,"opacity":1},80);
+        animate(imgArr[0],{"left":70,"opacity":1},100);
+
+
+        //控制条逻辑
+        var video = document.querySelector("video");
+        var playBtn = document.querySelector(".switch");
+        var currProgress = document.querySelector(".curr-progress");
+        var currTime = document.querySelector(".curr-time");
+        var totalTime = document.querySelector(".total-time");
+        var extend = document.querySelector(".extend");
+        //1、点击按钮，实现播放暂停并且切换图标
+        playBtn.onclick=function(){
+            //如果视频播放就暂停，暂停就播放
+            if(video.paused){
+                video.play();
+                //切换图标样式
+                this.classList.remove("icon-play");
+                this.classList.add("icon-pause");
+            }else{
+                video.pause();
+                this.classList.remove("icon-pause");
+                this.classList.add("icon-play");
+            }
+        }
+        //2、算出视频的总时长显示出来(视频加载完成后计算)
+        video.oncanplay= function(){
+            //获取视频总时长
+            tTime = video.duration;
+            totalTime.innerHTML = convertTime(tTime);
+
+        }
+        //3、当视频播放的时候，进度条同步，当前时间同步
+        var cTime;
+        var tTime;
+        var value;
+        video.ontimeupdate = function(){
+            cTime = video.currentTime;
+            console.log(cTime);
+            currTime.innerHTML = convertTime(cTime);
+            tTime = video.duration;
+            totalTime.innerHTML = convertTime(tTime);
+
+            //改变进度条
+            value = cTime/tTime;
+            currProgress.style.width=value*432+"px";
+        }
+        //页面加载完成后，小车开动先向右走再向左走(使用jQuery)
+        $(".tip").mouseenter(function(){
+            $(".control").animate({"opacity":1,"width":"650px"},1000);
+        })
+        //4、点击进度条，跳转到当前内容。
+        //获取当前鼠标位置
+        $(".progress").on("click",function(event){
+            var distance = Math.floor(event.clientX);
+            var left = $(this)[0].offsetLeft+$(".control")[0].offsetLeft;
+            var spacing = distance-left;
+            value = spacing/$(this)[0].offsetWidth;
+            currProgress.style.width=value*100+"%";
+            var cSec = video.duration*value;
+            cTime = convertTime(cSec);
+            video.currentTime = cSec;
+            console.log(cSec);
+
+        })
+
+    }
+</script>
+<body>
+<!--顶部导航开始部分-->
+<nav>
+    <ul>
+        <li class="base work">
+            <span>TOOL</span>
+            <span>TOOL</span>
+        </li>
+        <li class="base">
+            <a href="work.html">
+                <span>WORK</span>
+                <span>WORK</span>
+            </a>
+        </li>
+        <li class="base">
+            <a href="vr.html">
+                <span>VR/AR</span>
+                <span>VR/AR</span>
+            </a>
+
+        </li>
+        <li class="base">
+            <a href="directory.html">
+                <span>DIRECTORS</span>
+                <span>DIRECTORS</span>
+            </a>
+        </li>
+        <li class="base">
+            <a href="award.html">
+                <span>AWARDS</span>
+                <span>AWARDS</span>
+            </a>
+        </li>
+        <li class="base">
+            <a href="about.html">
+                <span>ABOUT</span>
+                <span>ABOUT</span>
+            </a>
+        </li>
+        <li class="base">
+            <a href="contact.html">
+                <span>CONTACT</span>
+                <span>CONTACT</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<!--顶部导航结束部分-->
+
+<!--主体内容开始部分-->
+<article>
+    <div class="word">
+        <div id="pic">
+            <img src="images/1tool/tool.svg" alt=""/>
+            <div class="add" style="z-index:999;">+</div>
+            <img src="images/1tool/shots.svg" alt=""/>
+        </div>
+    </div>
+    <div class="content" >
+        <div id="view-reel">
+            <div id="label">view reel</div>
+        </div>
+    </div>
+    <div class="media">
+        <video type="video/webm" autoplay loop src="video/1tool/treel.webm"
+                style="opacity:1;margin-left:0px;margin-top:-89.5px;" width="1366" height="768"></video>
+        <div class="control">
+            <!--播放开关-->
+            <a href="#" class="switch icon-pause "></a>
+            <div class="progress">
+                <!--当前进度-->
+                <div class="curr-progress"></div>
+            </div>
+            <div class="time">
+                <span class="curr-time">00:00:00</span>/<span class="total-time">00:00:00</span>
+            </div>
+        </div>
+        <div class="splash" style="position:absolute;width: 100%;height:100%;opacity:0.5;"></div>
+
+    </div>
+    <!--<div class="tip"></div>-->
+</article>
+<!--主体内容结束部分-->
+
+<!--底部内容开始部分-->
+<footer>
+    <div class="title">FOLLOW US</div>
+    <div class="links">
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+    </div>
+</footer>
+<!--底部内容结束部分-->
+</body>
+</html>

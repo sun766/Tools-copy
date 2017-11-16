@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="images/global/favicon.png">
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/contact.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <script src="js/jquery-1.11.1.js"></script>
+</head>
+
+<>
+<!--顶部导航开始部分-->
+<nav>
+    <ul>
+        <li class="base">
+            <a href="index.html">
+                <span>TOOL</span>
+                <span>TOOL</span>
+            </a>
+        <li class="base">
+        <a href="work.html">
+            <span>WORK</span>
+            <span>WORK</span>
+        </a>
+        </li>
+        <li class="base">
+            <a href="vr.html">
+                <span>VR/AR</span>
+                <span>VR/AR</span>
+            </a>
+        </li>
+        <li class="base">
+            <a href="directory.html">
+                <span>DIRECTORS</span>
+                <span>DIRECTORS</span>
+            </a>
+        </li>
+        <li class="base">
+            <a href="award.html">
+                <span>AWARDS</span>
+                <span>AWARDS</span>
+            </a>
+        </li>
+        <li class="base">
+            <a href="about.html">
+                <span>ABOUT</span>
+                <span>ABOUT</span>
+            </a>
+        </li>
+        <li class="base work">
+            <span>CONTACT</span>
+            <span>CONTACT</span>
+        </li>
+    </ul>
+</nav>
+<!--顶部导航结束部分-->
+
+<!--主体内容开始部分-->
+<article>
+    <div class="c_q">
+        <div class="c_main w">
+            <ul class="clearfix">
+                <li>
+                    <h1>
+                        <span>LA</span>
+                        <i></i>
+                    </h1>
+                    <h2>LOS ANGELES</h2>
+                </li>
+                <li class="c_m_tow">
+                    <h1>
+                        <span>LN</span>
+                        <i></i>
+                    </h1>
+                    <h2>LONDON</h2>
+                </li>
+                <li>
+                    <h1>
+                        <span>FR</span>
+                        <i></i>
+                    </h1>
+
+                    <h2>FRANCE</h2>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--注册框-->
+    <div class="dl_cs">注&nbsp;&nbsp;册</div>
+    <!--弹窗-->
+    <div class="container">
+        <label>会员</label><input type="text" id="inp1"><span>输入正确的会员号码</span><br>
+        <label>手机</label><input type="text" id="inp2"><span>输入11位手机号码</span><br>
+        <label>邮箱</label><input type="text" id="inp3"><span>输入正确邮箱</span><br>
+        <label>座机</label><input type="text" id="inp4"><span>输入您的座机</span><br>
+        <label>账号</label><input type="text" id="inp5"><span>亲输入您的账号</span><br>
+        <label>密码</label><input type="text" id="inp6"><span>请输入您的密码</span><br>
+        <a href="#">确&nbsp;定</a>
+    </div>
+</article>
+<!--主体内容结束部分-->
+
+<!--底部内容开始部分-->
+<footer>
+    <div class="title">FOLLOW US</div>
+    <div class="links">
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+    </div>
+</footer>
+<!--底部内容结束部分-->
+<script>
+        //    <!--弹窗-->
+    function tc(){
+        function $(id) {return document.getElementById(id);}
+        function change(id,fn) {
+            $(id).onblur = fn;
+        }
+
+        function setText(obj,txt) {
+            obj.nextSibling.innerHTML = txt;
+        }
+
+
+        function setClassName(obj,classname) {
+            obj.nextSibling.className = classname;
+        }
+
+
+        console.log(/andy/.test("andyandy"));
+        console.log(/^andy$/.test("andy"));
+        change("inp1",function() {
+            if(/^[1-9][0-9]{4,}$/.test(this.value)) {
+
+                setText(this,"恭喜输入正确");
+                setClassName(this,"right");
+            }
+            else {
+
+                setText(this,"对不起，输入有误");
+                setClassName(this,"wrong");
+            }
+        })
+
+        change("inp2",function() {
+            if(/^((13[0-9])|(15[^4,\D])|(18[0-9]))\d{8}$/
+                            .test(this.value)) {
+
+                setText(this,"手机号码正确");
+                setClassName(this,"right");
+            }
+            else {
+
+                setText(this,"对不起，是11位");
+                setClassName(this,"wrong");
+            }
+        })
+
+        change("inp3",function() {
+            if(/^[\w\-\.]+\@[\w]+\.[\w]{2,4}$/
+                            .test(this.value)) {
+
+                setText(this,"邮箱输入正确");
+                setClassName(this,"right");
+            }
+            else {
+
+                setText(this,"对不起，输入错误");
+                setClassName(this,"wrong");
+            }
+        })
+
+        change("inp4",function() {
+            if(/^0\d{2}-\d{8}$|^0\d{3}-\d{7}$/
+                            .test(this.value)) {
+
+                setText(this,"座机号码正确");
+                setClassName(this,"right");
+            }
+            else {
+
+                setText(this,"对不起，输入错误");
+                setClassName(this,"wrong");
+            }
+        })
+
+        change("inp5",function() {
+            if(/^[a-zA-Z0-9_-]{3,16}$/
+                            .test(this.value)) {
+
+                setText(this,"用户名正确");
+                setClassName(this,"right");
+            }
+            else {
+
+                setText(this,"对不起，输入错误");
+                setClassName(this,"wrong");
+            }
+        })
+
+        change("inp6",function() {
+            if(/^[a-zA-Z0-9_-]{6,18}/
+
+                            .test(this.value)) {
+
+                setText(this,"密码正确");
+                setClassName(this,"right");
+                $("password").className = "pwd str1";
+                if(/^([a-z].*[A-Z])|([A-Z].*[a-z])$/.test(this.value)) {
+
+                    $("password").className = "pwd str2";
+                }
+                if(/^([a-z].*[0-9])|([A-Z].*[0-9])|[0-9].*[a-zA-Z]$/.test(this.value)) {
+
+                    $("password").className = "pwd str3";
+                }
+                if(/^[A-Za-z0-9]+[_][A-Za-z0-9]*$/ .test(this.value)) {
+                    $("password").className = "pwd str4";
+                }
+
+            }
+            else {
+                setText(this,"对不起，输入错误");
+                setClassName(this,"wrong");
+            }
+        });
+    }
+
+
+    //    注册
+    $(window).load(function(){
+        $(".dl_cs").on("click",function(event){
+            $(".container").fadeIn();
+            event.stopPropagation()
+        })
+//
+        $(".container").on("click",function(event){
+            event.stopPropagation();
+        })
+        $(document).click(function(){
+            $(".container").fadeOut();
+        });
+    });
+    //字体
+    jQuery(window).load(function () {
+
+        $(".c_q").slideDown(1500);
+
+    })
+</script>
+
+</body>
+</html>

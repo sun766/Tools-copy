@@ -1,0 +1,24 @@
+/*头部导航栏*/
+.nav-ml{  width: 100%;  background-color: black;  opacity: 0.9;  height: 50px; margin-top: 50px; }
+.nav-ml ul{  list-style: none;  float: left;  }
+.nav-ml ul li{  float: left;  position: relative;  overflow: hidden;  }
+.nav-ml ul li a{  display: block;  line-height: 48px;  padding: 0 15px;  text-decoration: none;  font-size: 18px;  font-weight: 900;  color: white;  }
+.nav-ml ul li span{  position: absolute;  bottom: 0;  width: 100%;  height: 4px;  background-color: orange;  display: none;  }
+/*轮播盒子*/
+.wrap-ml{  width: 100%;  overflow: auto; background-color: black; }
+.title-ml{  height: 580px;  overflow: hidden;}
+/*轮播盒子内包*/
+.box-ml{    width: 6400px;  }
+.box-ml ul{  list-style: none;  width: 100%;  }
+.box-ml ul li{  float: left;  position: relative;  overflow: hidden;  width: 400px;  height: 580px; transform-origin: center; }
+.box-ml ul li span{  position: absolute;  display: block;  width: 400px;  height: 100%;  background-color: rgba(0,0,0,0.5);  top:0;  left: 0;  }
+.box-ml ul li span h3{  color: rgba(255, 0, 0, 0.51);  font-size: 25px;  margin: 20px;  }
+.box-ml ul li span p{  color: #ccc;  margin-top: 350px;  display: block;  width: 350px;  font-size: 18px;  line-height: 25px;  margin-left: 20px;  }
+.box-ml ul li span b{  float: right;  margin-right: 20px;  color: #ccc;  }
+.box-ml ul li a img{  transform-origin: center;  width: 400px;  height: 800px; }
+/*图片悬停样式封装*/
+.act{  animation: act 2s;}
+@keyframes act { 0%{  width:400px;  margin-left: 0px;  margin-top:0px;  height:800px;  } 50%{  width:500px;  margin-left: -50px;  margin-top:-100px;  height:1000px;  } 100%{  width:400px;  margin-left: 0px;  margin-top: 0px;  height:800px;  } }
+/*图片滚动样式封装*/
+.rol{  animation: rol 1s;}
+@keyframes rol { 0%{-webkit-transform:rotateY(0deg);} 50%{-webkit-transform:rotateY(90deg);} 100%{-webkit-transform:rotateY(0deg);} }

@@ -1,0 +1,251 @@
+.w{
+    width:1229px;
+    height:100px;
+    margin: 0 auto;
+}
+@font-face {
+    font-family: 'TrumpGothicEastBold';
+    src: url("../font/TrumpGotEasBol-webfont.woff");
+}
+@font-face {
+    font-family: 'LetterGothicStd-Slanted';
+    src: url("../font/LetterGothicStd-Slanted.otf");
+}
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "TrumpGothicEastBold";
+        list-style: none;
+        /*background: lightsalmon;*/
+        border:0;
+
+    }
+/*�����*/
+    #awards{
+        width:100%;
+        height: 600px;
+        position:relative;
+        left:0;
+        right: 0;
+        margin:50px 0;
+
+    }
+    /*�м���ĺ���*/
+    #awards.awards_header{
+        display: block;
+        margin: 90px 50px 50px 70px;
+
+    }
+    /*��ߺ���*/
+    .h_left{
+        width: 600px;
+        height: 300px;
+        padding: 0;
+        margin: 100px -35px 0px 10px;
+        float: left;
+        overflow: hidden;
+
+    }
+        /*���ֺ���*/
+    .h_left .h_lbox {
+        width: 130px;
+        height: 300px;
+        font-size: 350px;
+        line-height: 300px;
+        /*letter-spacing: 20px;*/
+        text-align: center;
+        color: #e74c4c;
+        float: left;
+        margin-right: 45px;
+        margin-bottom: 200px;
+
+    }
+
+    /*���ִ����*/
+    .h_lone,.h_ltwo,.h_lthree{
+        height: 1800px;
+        width: 130px;
+        float: left;
+        margin-top: -1800px;
+        margin-right: 45px;
+
+    }
+.h_lone{
+    height: 2400px;
+    margin-top: -2400px;
+
+}
+.h_ltwo{
+    height: 2100px;
+    margin-top: -2100px;
+
+}
+/*�ұߺ���*/
+    .h_right{
+        float: left;
+        width:600px;
+        height:300px;
+        line-height: 280px;
+        margin-top: 150px;
+        opacity: 0;
+    }
+    /*�ұߵ�span*/
+    .h_right span{
+        float: left;
+        font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+        color: #2f2f2f;
+        font-size: 270px;
+        top: -24px;
+        border-bottom: 0.12em solid #2f2f2f;
+        line-height: 1em;
+        letter-spacing: 2px;
+    }
+
+.c_txt{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 150px;
+    margin-bottom: 100px;
+    margin-top: -100px;
+    text-shadow:7px 7px 1px #e74c4c;
+
+}
+
+    /*无缝滚动*/
+
+.all{
+    width:800px;
+    height: 400px;
+    padding:7px;
+    border:1px solid #ccc;
+    margin:50px auto;
+    position: relative;
+}
+
+.screen{
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen li{
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    float: left;
+}
+
+.screen ul{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 50000px;
+}
+
+.all ol{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.all ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.all ol li.current {
+    background: orange;
+    color: #fff;
+}
+
+#arr {
+    display: none;
+}
+#arr span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    background: #000;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+}
+
+#arr #right {
+    right: 5px;
+    left: auto;
+}
+
+    .photo
+
+
+
+
+    /*ͼƬ�б�*/
+    .center ul li{
+        float: left;
+        margin:10px;
+    }
+    /*�б�ͼƬ*/
+   .center  ul li img{
+       width: 100%;
+       height: 100%;
+   }
+
+/*�б�li*/
+.container {
+    width: 220px;
+    height: 210px;
+    margin:10px;
+    border: 1px solid #ddd;
+    background: #f7f7f7;
+    float: left;
+    position: relative;
+    overflow: hidden;
+
+}
+/*���ֲ�*/
+.mask {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    display: none;
+    opacity: 0.5;
+    /*background: lightsalmon;*/
+}
+
+/*���ֲ�����*/
+.mask span{
+    display: block;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    background:#000 ;
+    opacity: 1;
+}

@@ -1,0 +1,48 @@
+.box {
+    width: 350px;
+    height: 350px;
+    padding-top: 100px;
+    margin-left: 300px;
+    /*border: 1px solid #ccc;*/
+    position: relative;
+    box-sizing: border-box;
+}
+
+.vr3 .big {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 80px;
+    left: 380px;
+    /*border: 1px solid #ccc;*/
+    overflow: hidden;
+    display: none;
+}
+.vr3 .box img {
+    width: 350px;
+    height: 350px;
+}
+.vr3 .big img {
+    width: 800px;
+    height: 800px;
+
+}
+
+.vr3 .mask {
+    width: 175px;
+    height: 175px;
+    /*background: rgba(255, 255, 0, 0.4);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*cursor: move;*/
+    display: none;
+}
+
+.vr3 .small {
+    position: relative;
+}
+
+ .vr3 img {
+    vertical-align: middle;
+}

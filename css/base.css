@@ -1,0 +1,40 @@
+/* 
+* @Author: Marte
+* @Date:   2017-08-10 10:18:05
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-09-27 15:15:58
+*/
+body,p,ul,ol,dl,li,dd,dt,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    font-family: "LockClock";
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: #3f0;
+}
+img,input{
+    margin: 0;
+    padding: 0;
+    border:0 none;
+    outline-style:none;
+}
+.clearfix:after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}
+.w{
+    width: 1000px;
+    margin: 0 auto;
+}
+

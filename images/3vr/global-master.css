@@ -1,0 +1,1448 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300);
+.bkgdCover {
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-out {
+  from {
+    opactiy: 1;
+  }
+  to {
+    opactiy: 0;
+  }
+}
+@-moz-keyframes fade-out {
+  from {
+    opactiy: 1;
+  }
+  to {
+    opactiy: 0;
+  }
+}
+@-ms-keyframes fade-out {
+  from {
+    opactiy: 1;
+  }
+  to {
+    opactiy: 0;
+  }
+}
+@keyframes fade-out {
+  from {
+    opactiy: 1;
+  }
+  to {
+    opactiy: 0;
+  }
+}
+@-webkit-keyframes subnavi-slide-in {
+  from {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+}
+@-moz-keyframes subnavi-slide-in {
+  from {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+}
+@-ms-keyframes subnavi-slide-in {
+  from {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+}
+@keyframes subnavi-slide-in {
+  from {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+}
+@-webkit-keyframes subnavi-slide-out {
+  from {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+  }
+}
+@-moz-keyframes subnavi-slide-out {
+  from {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+  }
+}
+@-ms-keyframes subnavi-slide-out {
+  from {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+  }
+}
+@keyframes subnavi-slide-out {
+  from {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+  }
+}
+.icon {
+  display: block;
+  background-repeat: repeat;
+  background-image: url(../assets/imgs/awards/spritesheet-black.png);
+  width: 60px;
+  height: 60px;
+}
+.icon.white {
+  background-image: url(../assets/imgs/awards/spritesheet-white.png);
+}
+.icon.icon-a-s {
+  background-size: 900% 900%;
+  background-position: 0.29585799% 0.29585799%;
+}
+.icon.icon-academy-awards {
+  background-size: 900% 900%;
+  background-position: 12.72189349% 0.29585799%;
+}
+.icon.icon-ad {
+  background-size: 900% 900%;
+  background-position: 25.14792899% 0.29585799%;
+}
+.icon.icon-ad-age {
+  background-size: 900% 900%;
+  background-position: 37.5739645% 0.29585799%;
+}
+.icon.icon-adc {
+  background-size: 900% 900%;
+  background-position: 50% 0.29585799%;
+}
+.icon.icon-adce {
+  background-size: 900% 900%;
+  background-position: 62.4260355% 0.29585799%;
+}
+.icon.icon-addys {
+  background-size: 900% 900%;
+  background-position: 74.85207101% 0.29585799%;
+}
+.icon.icon-adobe {
+  background-size: 900% 900%;
+  background-position: 87.27810651% 0.29585799%;
+}
+.icon.icon-adtech {
+  background-size: 900% 900%;
+  background-position: 0.29585799% 12.72189349%;
+}
+.icon.icon-adweek {
+  background-size: 900% 900%;
+  background-position: 12.72189349% 12.72189349%;
+}
+.icon.icon-aice {
+  background-size: 900% 900%;
+  background-position: 25.14792899% 12.72189349%;
+}
+.icon.icon-aicp {
+  background-size: 900% 900%;
+  background-position: 37.5739645% 12.72189349%;
+}
+.icon.icon-ana {
+  background-size: 900% 900%;
+  background-position: 50% 12.72189349%;
+}
+.icon.icon-andys {
+  background-size: 900% 900%;
+  background-position: 62.4260355% 12.72189349%;
+}
+.icon.icon-aoca {
+  background-size: 900% 900%;
+  background-position: 74.85207101% 12.72189349%;
+}
+.icon.icon-asc {
+  background-size: 900% 900%;
+  background-position: 87.27810651% 12.72189349%;
+}
+.icon.icon-award {
+  background-size: 900% 900%;
+  background-position: 0.29585799% 25.14792899%;
+}
+.icon.icon-awwwards {
+  background-size: 900% 900%;
+  background-position: 12.72189349% 25.14792899%;
+}
+.icon.icon-big {
+  background-size: 900% 900%;
+  background-position: 25.14792899% 25.14792899%;
+}
+.icon.icon-brand-film {
+  background-size: 900% 900%;
+  background-position: 37.5739645% 25.14792899%;
+}
+.icon.icon-british-arrows {
+  background-size: 900% 900%;
+  background-position: 50% 25.14792899%;
+}
+.icon.icon-cannes-lions {
+  background-size: 900% 900%;
+  background-position: 62.4260355% 25.14792899%;
+}
+.icon.icon-ciclope {
+  background-size: 900% 900%;
+  background-position: 74.85207101% 25.14792899%;
+}
+.icon.icon-clios {
+  background-size: 900% 900%;
+  background-position: 87.27810651% 25.14792899%;
+}
+.icon.icon-communication-arts {
+  background-size: 900% 900%;
+  background-position: 0.29585799% 37.5739645%;
+}
+.icon.icon-creativity {
+  background-size: 900% 900%;
+  background-position: 12.72189349% 37.5739645%;
+}
+.icon.icon-css-design-awards {
+  background-size: 900% 900%;
+  background-position: 25.14792899% 37.5739645%;
+}
+.icon.icon-design-licks {
+  background-size: 900% 900%;
+  background-position: 37.5739645% 37.5739645%;
+}
+.icon.icon-dga {
+  background-size: 900% 900%;
+  background-position: 50% 37.5739645%;
+}
+.icon.icon-emmy {
+  background-size: 900% 900%;
+  background-position: 62.4260355% 37.5739645%;
+}
+.icon.icon-epica {
+  background-size: 900% 900%;
+  background-position: 74.85207101% 37.5739645%;
+}
+.icon.icon-eurobest {
+  background-size: 900% 900%;
+  background-position: 87.27810651% 37.5739645%;
+}
+.icon.icon-fitc {
+  background-size: 900% 900%;
+  background-position: 0.29585799% 50%;
+}
+.icon.icon-fom {
+  background-size: 900% 900%;
+  background-position: 12.72189349% 50%;
+}
+.icon.icon-fox {
+  background-size: 900% 900%;
+  background-position: 25.14792899% 50%;
+}
+.icon.icon-fwa {
+  background-size: 900% 900%;
+  background-position: 37.5739645% 50%;
+}
+.icon.icon-fwam {
+  background-size: 900% 900%;
+  background-position: 50% 50%;
+}
+.icon.icon-glaad {
+  background-size: 900% 900%;
+  background-position: 62.4260355% 50%;
+}
+.icon.icon-globe {
+  background-size: 900% 900%;
+  background-position: 74.85207101% 50%;
+}
+.icon.icon-google {
+  background-size: 900% 900%;
+  background-position: 87.27810651% 50%;
+}
+.icon.icon-horizon {
+  background-size: 900% 900%;
+  background-position: 0.29585799% 62.4260355%;
+}
+.icon.icon-huga-award {
+  background-size: 900% 900%;
+  background-position: 12.72189349% 62.4260355%;
+}
+.icon.icon-lia {
+  background-size: 900% 900%;
+  background-position: 25.14792899% 62.4260355%;
+}
+.icon.icon-lovies {
+  background-size: 900% 900%;
+  background-position: 37.5739645% 62.4260355%;
+}
+.icon.icon-mashies {
+  background-size: 900% 900%;
+  background-position: 50% 62.4260355%;
+}
+.icon.icon-mcm {
+  background-size: 900% 900%;
+  background-position: 62.4260355% 62.4260355%;
+}
+.icon.icon-mobius {
+  background-size: 900% 900%;
+  background-position: 74.85207101% 62.4260355%;
+}
+.icon.icon-mtv-o {
+  background-size: 900% 900%;
+  background-position: 87.27810651% 62.4260355%;
+}
+.icon.icon-mtv-vma {
+  background-size: 900% 900%;
+  background-position: 0.29585799% 74.85207101%;
+}
+.icon.icon-mvpa {
+  background-size: 900% 900%;
+  background-position: 12.72189349% 74.85207101%;
+}
+.icon.icon-namic-emma {
+  background-size: 900% 900%;
+  background-position: 25.14792899% 74.85207101%;
+}
+.icon.icon-new-york-festivals {
+  background-size: 900% 900%;
+  background-position: 37.5739645% 74.85207101%;
+}
+.icon.icon-nytimes {
+  background-size: 900% 900%;
+  background-position: 50% 74.85207101%;
+}
+.icon.icon-promax {
+  background-size: 900% 900%;
+  background-position: 62.4260355% 74.85207101%;
+}
+.icon.icon-promo {
+  background-size: 900% 900%;
+  background-position: 74.85207101% 74.85207101%;
+}
+.icon.icon-rushes {
+  background-size: 900% 900%;
+  background-position: 87.27810651% 74.85207101%;
+}
+.icon.icon-shoot {
+  background-size: 900% 900%;
+  background-position: 0.29585799% 87.27810651%;
+}
+.icon.icon-show {
+  background-size: 900% 900%;
+  background-position: 12.72189349% 87.27810651%;
+}
+.icon.icon-sia {
+  background-size: 900% 900%;
+  background-position: 25.14792899% 87.27810651%;
+}
+.icon.icon-soundbutlers {
+  background-size: 900% 900%;
+  background-position: 37.5739645% 87.27810651%;
+}
+.icon.icon-spikes {
+  background-size: 900% 900%;
+  background-position: 50% 87.27810651%;
+}
+.icon.icon-strategies {
+  background-size: 900% 900%;
+  background-position: 62.4260355% 87.27810651%;
+}
+.icon.icon-sxsw {
+  background-size: 900% 900%;
+  background-position: 74.85207101% 87.27810651%;
+}
+.icon.icon-t1o2o3l4 {
+  background-size: 900% 900%;
+  background-position: 87.27810651% 87.27810651%;
+}
+.icon.icon-tech-crunch {
+  background-size: 900% 900%;
+  background-position: 99.70414201% 0.29585799%;
+}
+.icon.icon-the-bessies {
+  background-size: 900% 900%;
+  background-position: 99.70414201% 12.72189349%;
+}
+.icon.icon-the-mark-awards {
+  background-size: 900% 900%;
+  background-position: 99.70414201% 25.14792899%;
+}
+.icon.icon-the-one-show {
+  background-size: 900% 900%;
+  background-position: 99.70414201% 37.5739645%;
+}
+.icon.icon-the-webby-awards {
+  background-size: 900% 900%;
+  background-position: 99.70414201% 50%;
+}
+.icon.icon-time {
+  background-size: 900% 900%;
+  background-position: 99.70414201% 62.4260355%;
+}
+.icon.icon-vimeo {
+  background-size: 900% 900%;
+  background-position: 99.70414201% 74.85207101%;
+}
+.icon.icon-welovead {
+  background-size: 900% 900%;
+  background-position: 99.70414201% 87.27810651%;
+}
+.icon.icon-wma {
+  background-size: 900% 900%;
+  background-position: 0.29585799% 99.70414201%;
+}
+.icon.icon-yda {
+  background-size: 900% 900%;
+  background-position: 12.72189349% 99.70414201%;
+}
+/*
+//  Fonts
+// ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+*/
+@font-face {
+  font-family: 'TrumpGothicEastBold';
+  src: url('../assets/fonts/trump_bold/TrumpGotEasBol-webfont.eot');
+  src: url('../assets/fonts/trump_bold/TrumpGotEasBol-webfont.eot?iefix') format('eot'), url('../assets/fonts/trump_bold/TrumpGotEasBol-webfont.woff') format('woff'), url('../assets/fonts/trump_bold/TrumpGotEasBol-webfont.ttf') format('truetype'), url('../assets/fonts/trump_bold/TrumpGotEasBol-webfont.svg#webfontca5KkFOq') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TrumpGothicEastMedium';
+  src: url('../assets/fonts/trump_medium/TrumpGotEasMed-webfont.eot');
+  src: url('../assets/fonts/trump_medium/TrumpGotEasMed-webfont.eot?iefix') format('eot'), url('../assets/fonts/trump_medium/TrumpGotEasMed-webfont.woff') format('woff'), url('../assets/fonts/trump_medium/TrumpGotEasMed-webfont.ttf') format('truetype'), url('../assets/fonts/trump_medium/TrumpGotEasMed-webfont.svg#webfont9JD8bKhs') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TrumpGothicEastRegular';
+  src: url('../assets/fonts/trump_regular/TrumpGotEasReg-webfont.eot');
+  src: url('../assets/fonts/trump_regular/TrumpGotEasReg-webfont.eot?iefix') format('eot'), url('../assets/fonts/trump_regular/TrumpGotEasReg-webfont.woff') format('woff'), url('../assets/fonts/trump_regular/TrumpGotEasReg-webfont.ttf') format('truetype'), url('../assets/fonts/trump_regular/TrumpGotEasReg-webfont.svg#webfontbqAut62J') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LetterGothicStd';
+  src: url('../assets/fonts/letter_gothic/lettergothicstd.eot');
+  src: url('../assets/fonts/letter_gothic/lettergothicstd.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/letter_gothic/lettergothicstd.woff') format('woff'), url('../assets/fonts/letter_gothic/lettergothicstd.ttf') format('truetype'), url('../assets/fonts/letter_gothic/lettergothicstd.svg#lettergothicstd') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LetterGothicStd-Bold';
+  src: url('../assets/fonts/letter_gothic/lettergothicstdbold.eot');
+  src: url('../assets/fonts/letter_gothic/lettergothicstdbold.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/letter_gothic/lettergothicstdbold.woff') format('woff'), url('../assets/fonts/letter_gothic/lettergothicstdbold.ttf') format('truetype'), url('../assets/fonts/letter_gothic/lettergothicstdbold.svg#lettergothicstdbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LetterGothicStd-BoldSlanted';
+  src: url('../assets/fonts/letter_gothic/lettergothicstdboldslanted.eot');
+  src: url('../assets/fonts/letter_gothic/lettergothicstdboldslanted.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/letter_gothic/lettergothicstdboldslanted.woff') format('woff'), url('../assets/fonts/letter_gothic/lettergothicstdboldslanted.ttf') format('truetype'), url('../assets/fonts/letter_gothic/lettergothicstdboldslanted.svg#lettergothicstdboldslanted') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LetterGothicStd-Slanted';
+  src: url('../assets/fonts/letter_gothic/lettergothicstdslanted.eot');
+  src: url('../assets/fonts/letter_gothic/lettergothicstdslanted.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/letter_gothic/lettergothicstdslanted.woff') format('woff'), url('../assets/fonts/letter_gothic/lettergothicstdslanted.ttf') format('truetype'), url('../assets/fonts/letter_gothic/lettergothicstdslanted.svg#lettergothicstdslanted') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+#vr360 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: black;
+}
+#vr360 a {
+  color: #e74c4c;
+  cursor: pointer !important;
+}
+#vr360 a * {
+  cursor: pointer !important;
+}
+#vr360 section {
+  position: relative;
+  width: 100%;
+  padding: 120px 0;
+  background-size: cover;
+  background-position: center;
+}
+#vr360 section .content {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+#vr360 section.about {
+  background-image: url(../assets/imgs/vr360/vr360-about.jpg);
+}
+#vr360 section.contact {
+  background-image: url(../assets/imgs/vr360/vr360-contact.jpg);
+}
+#vr360 section.reel {
+  background-image: url(../assets/imgs/vr360/vr360-reel.jpg);
+}
+#vr360 section.projects {
+  background-image: url(../assets/imgs/vr360/vr360-projects.jpg);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+#vr360 .about header {
+  text-transform: uppercase;
+}
+#vr360 .about header h1 {
+  font-family: "TrumpGothicEastMedium", Arial, Helvetica, sans-serif;
+  color: #e74c4c;
+  font-size: 2em;
+  letter-spacing: 5px;
+}
+#vr360 .about header h2 {
+  font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+#vr360 .about p {
+  width: 580px;
+  max-width: 100%;
+  color: white;
+  line-height: 2;
+  margin-top: 20px;
+  font-family: "LetterGothicStd-BoldSlanted", "Lucida Console", Monaco, monospace;
+}
+#vr360 .contact {
+  position: relative;
+  padding: 240px 0 290px;
+}
+#vr360 .contact .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+#vr360 .contact .content div {
+  border-top: 2px solid #333;
+  display: inline-block;
+  float: left;
+  position: relative;
+  padding: 28px 0;
+  margin-right: .5%;
+  font-family: "LetterGothicStd-Bold", "Lucida Console", Monaco, monospace;
+  font-size: 1.2em;
+  width: 19%;
+}
+#vr360 .contact .content div.name {
+  text-transform: uppercase;
+  font-size: 2.4em;
+  font-family: "TrumpGothicEastMedium", Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+  width: 59%;
+}
+#vr360 .contact .content div.name:before {
+  content: 'CONTACT';
+  position: absolute;
+  color: #333;
+  top: -56px;
+}
+@media (max-width: 1100px) {
+  #vr360 .contact .content div {
+    width: 32% !important;
+  }
+}
+@media (max-width: 850px) {
+  #vr360 .contact .content div {
+    width: 100% !important;
+  }
+}
+#vr360 .reel {
+  color: white;
+  font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#vr360 .reel h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+#vr360 .reel .play {
+  position: relative;
+  font-size: 1.5em;
+  width: 150px;
+  padding: 15px;
+  overflow: hidden;
+  z-index: 1;
+  border: 3px solid white;
+  cursor: pointer;
+  transition: all .3s;
+}
+#vr360 .reel .play:hover {
+  color: black;
+}
+#vr360 .reel .play:hover:after {
+  transform: translateX(-10%) skew(-15deg);
+  z-index: -1;
+}
+#vr360 .reel .play:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  transform: translateX(-130%) skewX(-15deg);
+  background-color: white;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#vr360 .projects .content:before {
+  content: 'WORK';
+  position: relative;
+  width: 100%;
+  display: block;
+  color: #333;
+  font-size: 2.4em;
+  font-family: "TrumpGothicEastMedium", Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+  border-bottom: 2px solid #333;
+  line-height: 2.2;
+  margin-bottom: 1em;
+}
+#vr360 .projects .content > h1 {
+  color: #333;
+  line-height: 2;
+  width: 100%;
+  display: block;
+  text-transform: uppercase;
+  font-size: 2.4em;
+  font-family: "TrumpGothicEastMedium", Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+}
+#vr360 .projects .project {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 30px;
+  width: 30.9%;
+}
+#vr360 .projects .project:nth-of-type(3n-1) {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+@media (max-width: 900px) {
+  #vr360 .projects .project {
+    width: 47%;
+  }
+  #vr360 .projects .project:nth-of-type(3n-1) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #vr360 .projects .project:nth-of-type(2n-1) {
+    margin-right: 5%;
+  }
+}
+@media (max-width: 680px) {
+  #vr360 .projects .project {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+#vr360 .projects .project header {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  transition: transform .3s;
+  z-index: 1;
+}
+#vr360 .projects .project header h1 {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+}
+#vr360 .projects .project header h2 {
+  font-size: 12px;
+  font-family: "LetterGothicStd-Bold", "Lucida Console", Monaco, monospace;
+  font-weight: bold;
+  color: #e74c4c;
+  -webkit-text-stroke: 1px #e74c4c;
+  display: none;
+}
+#vr360 .projects .project header h2:first-child {
+  display: block;
+}
+#vr360 .projects .project .image {
+  background-color: black;
+}
+#vr360 .projects .project .image img {
+  width: 100%;
+  opacity: .5;
+  transition: opacity .3s;
+}
+#vr360 .projects .project:hover header {
+  transform: translateY(-10px);
+}
+#vr360 .projects .project:hover .image img {
+  opacity: .8;
+}
+#reel-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  opacity: 0;
+  background: black;
+  z-index: 10000;
+  overflow: hidden;
+}
+#reel-video.active {
+  display: block;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: fade-in 0.5s both;
+  -ms-animation: fade-in 0.5s both;
+  -moz-animation: fade-in 0.5s both;
+  animation: fade-in 0.5s both;
+}
+#reel-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-out-display {
+  0% {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+  99.999% {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+@-webkit-keyframes fade-out-display {
+  0% {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+  99.999% {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes fade-out-display {
+  0% {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+  99.999% {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+div.close-button {
+  position: fixed;
+  top: 70px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10000;
+  background-image: url('../assets/imgs/work/close.png');
+  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+}
+div.close-button:hover {
+  cursor: pointer;
+  background-image: url('../assets/imgs/work/close-hover.png');
+}
+#home {
+  width: 100%;
+  height: 100%;
+}
+#home .media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+}
+#home .poster {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+#home .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1002;
+}
+#home .tabs {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  margin-top: 50px;
+  overflow: hidden;
+  z-index: 2;
+}
+#home .tabs .tab {
+  width: 40px;
+  height: 2px;
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateX(-100%);
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+#home .tabs .tab .slider {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+}
+#home .slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#home .slides .slide {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#home .slides .slide .slide-content {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 90%;
+  height: 80%;
+  pointer-events: none;
+}
+#home .slides .logos {
+  position: relative;
+  height: 100px;
+  line-height: 100px;
+  margin-bottom: 10vh;
+}
+#home .slides .logos img {
+  height: 100%;
+  display: inline-block;
+  float: left;
+}
+#home .slides .logos .plus {
+  color: white;
+  font-size: 3em;
+  display: inline-block;
+  float: left;
+  margin: 0 .5em;
+}
+#home .slides .title {
+  text-transform: uppercase;
+  color: white;
+  font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+  font-size: 9em;
+  line-height: .9;
+  letter-spacing: .1em;
+}
+#home .slides .title .line {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  clear: both;
+}
+#home .slides .title .line .sizer {
+  opacity: 0;
+}
+#home .slides .title .line .display {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#home .news {
+  float: left;
+  clear: both;
+  margin-top: 40px;
+  pointer-events: all;
+}
+#home .news a {
+  display: inline-block;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  color: #c7c7c7;
+  padding: 4px;
+  cursor: pointer;
+}
+#home .news a * {
+  cursor: pointer;
+}
+#home .news a:hover {
+  background-color: #fff;
+  color: #000;
+}
+#home .news a span {
+  font-size: .9em;
+  color: #e74c4c;
+  display: none;
+}
+#home .news a div:last-child:after {
+  content: 'MORE >';
+  color: #e74c4c;
+  font-size: .9em;
+  padding-left: .5em;
+}
+#home #view-reel {
+  position: absolute;
+  top: 20%;
+  right: -3px;
+  border: rgba(255, 255, 255, 0.5) solid 3px;
+  z-index: 1002;
+  overflow: hidden;
+  display: block;
+  font-size: 16px;
+  background: none;
+  width: 240px;
+  padding: 15px;
+  text-align: left;
+  font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color .2s;
+}
+#home #view-reel * {
+  cursor: pointer;
+}
+#home #view-reel:before,
+#home #view-reel:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  transition: all 0.2s cubic-bezier(0.15, 0.75, 0.49, 0.93);
+  transform: scaleY(0);
+  z-index: -1;
+}
+#home #view-reel:before {
+  transform-origin: bottom right;
+  top: 0;
+}
+#home #view-reel:after {
+  transform-origin: top right;
+  top: 50%;
+}
+#home #view-reel:hover {
+  color: #000;
+  transition: color .2s .35s;
+}
+#home #view-reel:hover:before,
+#home #view-reel:hover:after {
+  animation: view-reel-hover 0.5s cubic-bezier(0.15, 0.75, 0.49, 0.93) both;
+}
+@media (max-height: 720px) {
+  #home .tabs,
+  #home #view-reel,
+  #home .slides .slide .slide-content {
+    top: 15%;
+  }
+  #home .slides .title {
+    font-size: 6em;
+  }
+  #home .slides .logos {
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 8vh;
+  }
+  #home .news {
+    margin-top: 30px;
+  }
+}
+.mobile #home {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  height: calc("100% - 65px");
+}
+.mobile #home .tabs,
+.mobile #home #view-reel,
+.mobile #home .slides .slide .slide-content {
+  top: 5%;
+}
+.mobile #home .poster {
+  display: block;
+}
+.mobile #home .tabs {
+  text-outline: none;
+  margin-top: 24px;
+  left: 10%;
+}
+.mobile #home .tabs .tab {
+  margin-right: 2px;
+  float: left;
+}
+.mobile #home .slides .slide .slide-content {
+  position: fixed;
+  height: auto;
+  top: auto;
+  bottom: 33%;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+.mobile #home .slides .title {
+  font-size: 3em;
+  line-height: 1;
+}
+.mobile #home .slides .logos {
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 4vh;
+}
+.mobile #home .slides .logos .plus {
+  font-size: 1.5em;
+}
+.mobile #home .news {
+  margin-top: 20px;
+}
+.mobile #home .news a {
+  font-size: .85em;
+}
+.mobile #home #view-reel {
+  border: none;
+  width: auto;
+  padding-right: 35px;
+  right: 0;
+}
+.mobile #home #view-reel:hover {
+  color: white !important;
+}
+.mobile #home #view-reel:after {
+  right: 0;
+  transform: none;
+  height: 2px;
+  width: 27px;
+  left: auto;
+  margin-top: -1px;
+  animation: none;
+}
+.mobile #home #view-reel:before {
+  display: none;
+  animation: none;
+}
+@keyframes view-reel-hover {
+  0% {
+    transform: scaleX(0) scaleY(0.02);
+  }
+  70% {
+    transform: scaleX(1) scaleY(0.02);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+#footer {
+  background: none;
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  z-index: 10002;
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#footer * {
+  cursor: pointer;
+}
+#footer .title {
+  margin-bottom: 5px;
+}
+#footer .links {
+  z-index: 1000;
+  position: relative;
+}
+#footer .links .social-link {
+  display: inline-block;
+  margin: 5px;
+}
+#footer .links .social-link img {
+  height: 18px;
+  width: auto;
+}
+#email-signup-container {
+  bottom: 0px;
+  position: absolute;
+  z-index: 0;
+  right: 0px;
+  overflow: hidden;
+  width: 240px;
+  height: 170px;
+}
+#email-signup-container.show {
+  z-index: 11000;
+}
+#email-signup {
+  width: 190px;
+  height: 120px;
+  padding: 25px;
+  background: #000000;
+  border-top: 3px solid #e74c4c;
+  position: absolute;
+  bottom: -250px;
+  right: 0px;
+  transition: all 0.5s ease-in-out;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+}
+#email-signup .title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#email-signup .email-close-button {
+  font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding-left: 5px;
+  text-transform: uppercase;
+  color: #e74c4c;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+#email-signup .email-close-button * {
+  cursor: pointer;
+}
+#email-signup #email {
+  background: white;
+  border: none;
+  padding: 5px;
+  font-style: italic;
+  color: #e74c4c;
+  width: 175px;
+  margin-bottom: 10px;
+}
+#email-signup #submit-email-button {
+  font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+  float: right;
+  background: black;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+}
+#email-signup .email-thanks {
+  text-transform: uppercase;
+  font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+#email-signup.show {
+  bottom: -20px;
+}
+.mobile #footer {
+  background: none;
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  height: 140px;
+  width: 130px;
+  z-index: 10002;
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.mobile #footer * {
+  cursor: pointer;
+}
+.mobile #footer .title {
+  margin-bottom: 5px;
+  display: none;
+}
+.mobile #footer .links {
+  z-index: 1000;
+  position: relative;
+}
+.mobile #footer .links .social-link {
+  display: inline-block;
+  margin: 5px;
+}
+.mobile #footer .links .social-link img {
+  height: 18px;
+  width: auto;
+}
+.mobile #email-signup-form {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.mobile #email-signup-container {
+  bottom: 0px;
+  position: absolute;
+  z-index: 0;
+  right: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 325px;
+}
+.mobile #email-signup-container.show {
+  z-index: 11000;
+}
+.mobile #email-signup {
+  width: 100%;
+  height: 300px;
+  background: #000000;
+  border-top: 3px solid #e74c4c;
+  position: absolute;
+  left: 0px;
+  bottom: -300px;
+  right: 0px;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  padding: 0px;
+  padding-top: 25px;
+  -webkit-font-smoothing: antialiased;
+}
+.mobile #email-signup .title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+}
+.mobile #email-signup .email-close-button {
+  font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding-left: 5px;
+  text-transform: uppercase;
+  color: #e74c4c;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+.mobile #email-signup .email-close-button * {
+  cursor: pointer;
+}
+.mobile #email-signup #email {
+  background: white;
+  border: none;
+  padding: 10px;
+  font-style: italic;
+  color: #e74c4c;
+  width: 250px;
+  margin-bottom: 10px;
+  border-radius: 0;
+  font-size: 20px;
+}
+.mobile #email-signup #submit-email-button {
+  font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+  display: block;
+  width: 270px;
+  background: #e74c4c;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mobile #email-signup .email-thanks {
+  text-transform: uppercase;
+  font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 80%;
+  color: white;
+  font-size: 24px;
+  padding: 10%;
+}
+.mobile #email-signup.show {
+  bottom: -20px;
+}

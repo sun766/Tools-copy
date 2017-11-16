@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="images/global/favicon.png">
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/about.css"/>
+    <script src="js/jquery-1.11.1.js"></script>
+</head>
+<script>
+
+    window.onload = function () {
+        //需求：鼠标进入显示移开隐藏;
+        var nodeSmall = document.getElementById("nodeSmall");
+        var a = nodeSmall.getElementsByTagName("a")[0];
+        var er = document.getElementById("er");
+
+        //绑定事件
+        a.onmouseover = function () {
+            er.style.display = "block";
+        }
+        a.onmouseout = function () {
+            er.style.display = "none";
+        }
+    }
+
+    //获取一个随机颜色
+    function getColor(){
+        var colorArr = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
+        var colorStr = '#';
+        var n = 0;
+        for(var i=0;i<6;i++){
+            n = parseInt(Math.random()*16);
+            colorStr+=colorArr[n];
+        }
+
+        return colorStr;
+    }
+
+    $(document).ready(function () {
+        var $lis = $(".wrap").find("li");
+        var m = 0;
+        var color = '';
+        setInterval(function () {
+            color = getColor();
+            //随机获取第m个li元素
+            m = parseInt(Math.random()*$lis.length);
+            $($lis[m]).css({opacity:1,background:color}).siblings("li").css({"opacity": .4,background:''});
+        }, 100);
+    });
+</script>
+<body>
+<!--顶部导航开始部分-->
+<nav>
+    <ul>
+        <li class="base">
+            <a href="index.html">
+                <span>TOOL</span>
+                <span>TOOL</span>
+            </a>
+        <li class="base">
+        <a href="work.html">
+            <span>WORK</span>
+            <span>WORK</span>
+        </a>
+        </li>
+        <li class="base">
+            <a href="vr.html">
+                <span>VR/AR</span>
+                <span>VR/AR</span>
+            </a>
+
+        </li>
+        <li class="base">
+            <a href="directory.html">
+                <span>DIRECTORS</span>
+                <span>DIRECTORS</span>
+            </a>
+        </li>
+        <li class="base">
+            <a href="award.html">
+                <span>AWARDS</span>
+                <span>AWARDS</span>
+            </a>
+        </li>
+        <li class="base work">
+            <span>ABOUT</span>
+            <span>ABOUT</span>
+        </li>
+        <li class="base">
+            <a href="contact.html">
+                <span>CONTACT</span>
+                <span>CONTACT</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<!--顶部导航结束部分-->
+
+<!--主体内容开始部分-->
+<article>
+    <div class="box">
+        <div class="b"></div>
+        <h1>Storytelling At The Pace Of Culture And Innovation.</h1>
+
+        <p class="r">We are Artists. Directors. Designers. Producers. Technologists. Creative Directors. Dreamers.
+            Inventors.</p>
+
+        <p>If we can think it, we can make it.</p>
+
+        <p>We specialize in storytelling through film, interactive installations, virtual worlds and digital
+            experiences, constantly striving to break new ground in everything we do. We both embrace and invent new
+            technologies, always remaining true to the ideas we are bringing to life, and to our agencies and brand
+            partners.</p>
+
+        <p>We have been honored at the Emmys, Webbys, DGA Awards, Oscars, SXSW, AICP, One Show, D&amp;AD, and with
+            Cannes Lions. Tool is ranked as one of Creativity Magazine's A-List Production Companies, CSS Design’s USA
+            Design Agency Of The Year and named to FWA Hall of Fame.</p>
+    </div>
+    <!--<div class="footer">-->
+        <!--<div class="title">-->
+            <!--Follow Us-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<div>-->
+                <!--<a href="">-->
+                    <!--<img src="img/icon-facebook.png">-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<a href="">-->
+                    <!--<img src="img/icon-instagram.png">-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<a href="">-->
+                    <!--<img src="img/icon-twitter.png" alt=""/>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<a href="">-->
+                    <!--<img src="img/icon-mail.png" alt=""/>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="nodeSmall" id="nodeSmall">
+        <a href="#"></a>
+        <div class="erweima" id="er">
+            <!--<img src="images/6about/2934349b033b5bb571dc8c5133d3d539b600bc12.jpg" alt=""/>-->
+        </div>
+    </div>
+    <div class="wrap">
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+</article>
+<!--主体内容结束部分-->
+
+<!--底部内容开始部分-->
+<footer>
+    <div class="title">FOLLOW US</div>
+    <div class="links">
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+    </div>
+</footer>
+<!--底部内容结束部分-->
+</body>
+</html>
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head lang="en">-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title></title>-->
+    <!--<link rel="stylesheet" href="css/index.css"/>-->
+    <!--<script src="jquery-1.11.1.min.js"></script>-->
+
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--</html>-->

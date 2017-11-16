@@ -1,0 +1,219 @@
+/*全局样式*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dd,dt,ul,ol,li,
+pre,form,fieldset,legend,button,input,textarea,th,td {
+    margin:0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size:100%;
+    font: normal normal normal 10pt/normal Arial,Helvetice,sans-serif;
+    font-weight: normal;
+    background: transparent;
+    font-family:inherit;
+    color: inherit;
+    text-transform:  inherit;
+    pointer-events:inherit;
+    opacity:inherit;
+    cursor: default;
+}
+body,button,input,select,textarea {
+    font: 12px/1.5em tahoma,arial,\5b8b\4f53,sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+}
+address,cite,dfn,em,var {
+    font-style:normal;
+}
+small {
+    font-size: 12px;
+}
+ul,li {
+    list-style:none;
+}
+a {
+    color: #000;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration: none;
+}
+sup {
+    vertical-align:text-top;
+}
+sub {
+    vertical-align: text-bottom;
+}
+legend {
+    color: #000;
+}
+fieldset,img {
+    border: 0;
+}
+button,input,select,textarea{
+    font-size:100%;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+code,kbd,pre,samp {
+    font-family: courier new,courier,monospace;
+}
+@font-face {
+    font-family: 'TrumpGothicEastBold';
+    src: url("../font/TrumpGotEasBol-webfont.woff");
+}
+@font-face {
+    font-family: 'LetterGothicStd-Slanted';
+    src: url("../font/LetterGothicStd-Slanted.otf");
+}
+/*顶部导航部分*/
+body {
+    background: #000;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+nav {
+    position:fixed;
+    top:0;
+    left: 0;
+    z-index: 9000;
+    width: 100%;
+    height: 50px;
+    background-color: #ddd;
+    min-width: 960px;
+}
+nav ul {
+    width: 1400px;
+    margin: 0 auto;
+    height: 50px;
+}
+nav ul li {
+    -webkit-font-smoothing:antialiased;
+    position: absolute;
+    top: 0px;
+    width: 195px;
+    height: 50px;
+    line-height: 50px;
+    /*子盒子透视效果*/
+    transform-style: preserve-3d;
+    transition: all 0.4s;
+    border: 1px solid #ccc;
+    border-left: none;
+    font-size: 16px;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    -webkit-box-sizing: border-box;
+    font-family: "TrumpGothicEastBold",Arial,Helvetica,sans-serif !important;
+    cursor: pointer;
+}
+nav ul li:nth-child(1){
+    left:0px;
+}
+nav ul li:nth-child(2){
+    left:196px;
+}
+nav ul li:nth-child(3){
+    left:392px;
+}
+nav ul li:nth-child(4){
+    left:588px;
+}
+nav ul li:nth-child(5){
+    left:784px;
+}
+nav ul li:nth-child(6){
+    left:980px;
+}
+nav ul li:nth-child(7){
+    left:1176px;
+}
+nav li span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+nav li span:nth-child(1){
+    background:#fff;
+    transform: translateZ(25px);
+}
+nav li span:nth-child(2){
+    background:#000;
+    color: #fff;
+    transform: rotateX(90deg) translateZ(25px);
+}
+nav ul li:hover {
+    transform: rotateX(-90deg);
+}
+
+.work{
+    transform: rotateX(-90deg);
+}
+nav ul .current {
+    background:#000;
+    color: #fff;
+}
+/*底部共享链接开始部分*/
+footer {
+    width: 150px;
+    height: 80px;
+    position: fixed;
+    right: 60px;
+    bottom: 40px;
+}
+footer .title {
+    width: 145px;
+    height: 42px;
+    text-align:center;
+    font:  16px/42px  "TrumpGothicEastBold", Arial, Helvetica, sans-serif ;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 5px;
+}
+footer .links {
+    width: 150px;
+    height: 32px;
+    text-align: center;
+}
+.links a {
+    display: inline-block;
+    margin-right: 8px;
+}
+.links a:nth-child(1) {
+    width:8px;
+    height: 22px;
+    padding: 1px 2px;
+    background: url("../images/1tool/icon-facebook.png") no-repeat;
+    background-size: contain;
+}
+.links a:nth-child(2) {
+    width:18px;
+    height: 22px;
+    padding: 1px 2px;
+    background: url("../images/1tool/icon-instagram.png") no-repeat;
+    background-size: contain;
+}
+.links a:nth-child(3) {
+    width:22px;
+    height: 22px;
+    padding: 1px 2px;
+    background: url("../images/1tool/icon-mail.png") no-repeat;
+    background-size: contain;
+}
+.links a:nth-child(4) {
+    width:24px;
+    height: 22px;
+    padding: 1px 2px;
+    background: url("../images/1tool/icon-twitter.png") no-repeat;
+    background-size: contain;
+}
+/*底部共享链接结束部分*/
+

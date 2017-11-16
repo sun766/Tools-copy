@@ -1,0 +1,411 @@
+/* 
+* @Author: Marte
+* @Date:   2017-09-24 14:13:47
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-09-28 10:53:31
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "LockClock";
+}
+
+a {
+    text-decoration: none;
+    color: #3f0;
+    font-family: "LockClock";
+}
+
+@font-face {
+    font-family: 'LockClock';
+    src: url('../font/LockClock.ttf');
+}
+
+body {
+    overflow: hidden;
+}
+
+/*.head_nav{
+    display:none;
+}*/
+
+/*电梯*/
+
+.floor_main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    /*top: 10vh;*/
+}
+
+.floor_box {
+    clear: both;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*.header {
+    height: 5vh;
+    background-color: #3f0;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}*/
+
+.floor {
+    height: 100%;
+    width: 100%;
+    /*background: url(../imgs/bg.png);*/
+    background-color: #000;
+    box-sizing: border-box;
+    color: #3f0;
+    /*clear:both;*/
+    overflow: hidden;
+    /*font-size: 50vh;*/
+    /*text-align: center;*/
+    /*line-height: 200%;*/
+    /*text-shadow: 0 0 4vh #0f0;*/
+    /*font-weight: bold;*/
+    /*box-sizing: border-box;*/
+    /*border-bottom: 1px solid #0f0;*/
+    position: relative;
+}
+
+
+/*.floor2{
+    border:10px dotted #3f9;
+    box-sizing: border-box;
+}*/
+
+.bg_Video {
+    /*height:100vh;*/
+    /*    width:110%;*/
+    /*transform:scale(1.1)*/
+    position: absolute;
+    filter: grayscale(80%);
+}
+
+.floor_box_dot {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    /*overflow: hidden;*/
+    /*box-shadow: 0 0 4vh #0f0;*/
+    /*border-radius: 20px;*/
+    /*    height:400px;
+    width: 50px;*/
+    /*background-color: #3f0;*/
+}
+
+.floor_top,
+.floor_prev,
+.floor_next {
+    height: 50px;
+    width: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    color: #3f9;
+    font-weight: bold;
+    font-family: "LockClock";
+    font-size: 16px;
+    animation: tbling .75s linear infinite;
+    /*text-shadow: 0 0 15px #0f0;*/
+    /*background-color: #fff;*/
+}
+
+.floor_top {
+    font-size: 20px;
+}
+
+.floor_prev,
+.floor_next {
+    transform: rotate(90deg);
+    margin-bottom: -2px;
+}
+
+.floor_prev span,
+.floor_next span {
+    font-size: 20px;
+    float: left;
+    margin-top: -1px;
+    /*display:block;*/
+}
+
+.floor_next span {
+    float: right;
+}
+
+
+/*floor1 开始*/
+
+
+/*电梯导航*/
+
+.dot_list {
+    margin-left: -2px;
+}
+
+.dot_list li {
+    height: 10px;
+    width: 10px;
+    background-color: #3f9;
+    margin: 20px auto;
+    border-radius: 50%;
+    cursor: pointer;
+    /*box-shadow: 0 0 10px #0f0;*/
+    opacity: 0.5;
+    animation: bbling .75s linear infinite;
+}
+
+.dot_list li.current {
+    opacity: 1;
+}
+
+
+/*闪烁动画*/
+
+@keyframes tbling {
+    0% {
+        text-shadow: 0 0 5px #0f0;
+    }
+    50% {
+        text-shadow: 0 0 25px #0f0;
+        color: #3f0;
+    }
+    100% {
+        text-shadow: 0 0 5px #0f0;
+    }
+}
+
+@keyframes bbling {
+    0% {
+        box-shadow: 0 0 5px #0f0;
+        background-color: #3f0;
+    }
+    50% {
+        box-shadow: 0 0 25px #0f0;
+        background-color: #3f9;
+    }
+    100% {
+        box-shadow: 0 0 5px #0f0;
+        background-color: #3f0;
+    }
+}
+
+
+/*旋转木马*/
+
+.banner_3d_wrap {
+    width: 1200px;
+    /*height:100%;*/
+    margin: 70px auto 0;
+}
+
+.banner_3d_slide {
+    height: 500px;
+    position: relative;
+}
+
+.banner_3d_slide li {
+    position: absolute;
+    /*left: 200px;*/
+    top: 0;
+    background: #000;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px #0f0;
+    /*animation:bbling 5s infinite;*/
+}
+
+.banner_3d_slide li img {
+    width: 100%;
+    display: block;
+}
+
+.banner_3d_arrow {
+    opacity: 0;
+}
+
+.banner_3d_prev,
+.banner_3d_next {
+    width: 76px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /*margin-top: -56px;*/
+    font-family: "LockClock";
+    font-size: 50px;
+    text-align: center;
+    line-height: 112px;
+    color: #3f0;
+    z-index: 99;
+    animation: tbling 2s infinite;
+}
+
+.banner_3d_next {
+    right: 0;
+}
+
+
+/*floor1 结束*/
+
+
+/*floor2 开始*/
+
+.ani_wrap {
+    height: 85%;
+    width: 85%;
+    border: 1px solid #3f0;
+    margin: 4% auto 0;
+    position: relative;
+}
+
+.clickhere {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+
+.clickhere img {
+    width: 100%;
+    height: 100%;
+}
+
+.atrstar_bg {
+    position: absolute;
+    background-color: #111;
+    width: 15%;
+    top: 62%;
+    left: 58%;
+    border-radius: 50%;
+    transform: rotate(30deg);
+    cursor: pointer;
+}
+
+.atrstar_bg img {
+    width: 100%;
+    display: block;
+}
+
+
+/*floor2 结束*/
+
+
+/*floor3 开始*/
+
+.floor3 {
+    background-image: url(../images/4directory/bg.png);
+}
+
+.floor3_header {
+    /*    position: absolute;*/
+    height: 50px;
+    width: 100%;
+    background-color: #3f0;
+    display: none;
+}
+
+.floor3_head_list {}
+
+.floor3_head_list li {
+    height: 50px;
+    line-height: 50px;
+    margin-right: 50px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.floor3_head_list li:hover {
+    border-bottom: 4px solid #000;
+}
+
+.floor3_head_list li.active {
+    border-bottom: 4px solid #000;
+}
+
+.floor3_head_list li a {
+    font-size: 16px;
+    color: #000;
+}
+
+.floor3_main {
+    width: 1000px;
+    margin-top: 20px;
+    display: none;
+}
+
+.floor3_list {
+    width: 500px;
+    float: left;
+}
+
+.floor3_main li {
+    height: 30px;
+    width: 400px;
+    line-height: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    background-image: url(../images/4directory/li_bg.png);
+    position: relative;
+}
+
+.floor3_mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #3f0;
+    display: none;
+    bottom: 0;
+}
+
+.floor3_main li a {
+    width:100%;
+    position: absolute;
+    z-index: 999;
+}
+
+.floor3_main .live_action,
+.floor3_main .interacive,
+.floor3_main .artists {
+    position: absolute;
+}
+
+.floor3_main .interacive,
+.floor3_main .artists {
+    display: none;
+}
+
+.floor3_main .artists_top{
+    margin-top: 50px;
+    height:250px;
+    width:1000px;
+    border-bottom: 1px solid #3f0;
+}
+.floor3_main .artists_top div{
+    float: left;
+    width:500px;
+}
+
+.floor3_main .artists_top_left_top{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.floor3_main .artists_top_left_bottom{
+    font-size: 15px;
+}
+.floor3_main .artists_top_right{
+    font-size: 20px;
+}

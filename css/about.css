@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../images/6about/mobile-home-shots.jpg.jpg);
+}
+.b {
+    width: 27px;
+    height: 6px;
+    background-color: #e74c4c;
+    margin-bottom: 45px;
+}
+
+.box {
+    margin-top: 110px;
+    margin-left: 80px;
+    width: 50%;
+    margin-bottom: 120px;
+}
+
+h1 {
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-family: "TrumpGothicEastMedium", Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    margin-bottom: 1.5em;
+}
+
+p {
+    color: #fff;
+    margin-top: 2.5em;
+    font-size: 13px;
+    font-family: "LetterGothicStd-Slanted", "Lucida Console", Monaco, monospace;
+    line-height: 28px;
+}
+
+.r {
+    color: #e74c4c;
+}
+
+.footer {
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 16px;
+}
+
+img {
+    height: 18px;
+    width: auto;
+    float: left;
+    margin: 4px;
+}
+.nodeSmall {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 210px;
+    top: 70%;
+    /*background: url(../images/6about/bgs.png) no-repeat -159px -51px;*/
+
+}
+.erweima {
+    display: none;
+    position: absolute;
+    top: -55px;
+    left: -315px;
+}
+.erweima img {
+    width: 250px;
+    height: 250px;
+}
+.nodeSmall a {
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+ul {
+    list-style: none;
+}
+.wrap {
+    margin: -740px 850px;
+    width: 360px;
+    height: 360px;
+    padding: 10px 0 0 10px;
+    background: #000;
+    overflow: hidden;
+    border: 1px solid grey;
+}
+
+.wrap li {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin: 0 10px 10px 0;
+    background-color: #ffffff;
+}

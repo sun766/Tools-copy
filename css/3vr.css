@@ -1,0 +1,208 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+    /*font-family: "ËÎÌו";*/
+    color: #fff;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+img,input {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    outline-style: none;
+}
+
+
+@font-face {
+    font-family: 'TrumpGothicEastBold';
+    src: url("../fonts/TrumpGotEasBol-webfont.woff");
+}
+@font-face {
+    font-family: 'LetterGothicStd-Slanted';
+    src: url("../fonts/LetterGothicStd-Slanted.otf");
+}
+
+
+
+
+.vr1{
+    background-image:url(../images/3vr/vr1.jpg);
+    background-size:cover;
+    background-position: center;
+    height:658px;
+    position: relative;
+}
+
+.vr1 .header {
+    position: absolute;
+    top: 120px;
+    left: 350px;
+}
+.vr1 .header .header_2 {
+    font-family: "TrumpGothicEastMedium", Arial, Helvetica, sans-serif;
+    color: #e74c4c;
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+.vr1 .header .header_1 {
+    font-family: "TrumpGothicEastBold", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: 1px;
+
+}
+.vr2{
+    background-image:url(../images/3vr/vr2.jpg);
+    background-size:cover;
+    background-position: center;
+    height:363px;
+}
+
+.vr2 .vr2_to {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.vr2_to .vr2_1 h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    padding-top: 110px;
+
+}
+
+.vr2_to  .vr2_2 {
+    position: relative;
+    font-size: 1.5em;
+    width: 150px;
+    padding: 15px;
+    overflow: hidden;
+    z-index: 1;
+    border: 3px solid white;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.vr2_to .vr2_2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    transform: translateX(-130%) skewX(-15deg);
+    background-color: white;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.vr2_to .follow {
+    width: 150px;
+    float: right;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 80px;
+}
+.vr2_to .follow  .mailbox img {
+    width: 15px;
+    height: 18px;
+    float: left;
+    padding-left: 18px;
+
+}
+
+
+.vr3{
+    background-image:url(../images/3vr/vr3.jpg);
+    background-size:cover;
+    background-position: center;
+    height:1000px;
+}
+
+
+
+
+.vr4{
+    background-image:url(../images/3vr/vr4.jpg);
+    background-size:cover;
+    background-position: center;
+    height:530px;
+}
+
+.wrap {
+    width: 580px;
+    max-width: 100%;
+    color: #DDDEDF;
+    line-height: 2;
+    margin-top: 20px;
+    font-family: "LetterGothicStd-BoldSlanted", "Lucida Console", Monaco, monospace;
+    /*background-color: #fff;*/
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    /*letter-spacing: 2px;*/
+}
+
+
+.word {
+    font-size: 8px;
+    /*text-align: left;*/
+    font-family: "ËÎÌו";
+    letter-spacing: 2px;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink .7s infinite;
+    -moz-animation: blink .7s infinite;
+    animation: blink .7s infinite;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.wrap {*/
+    /*width: 1000px;*/
+    /*text-align: center;*/
+    /*margin: 100px auto 0;*/
+/*}*/
+
+/*.wrap h1 {*/
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    /*font-weight: 300;*/
+/*}*/
+
+/*.word {*/
+    /*font-weight: 700;*/
+/*}*/
+
+/*.typed-cursor {*/
+    /*opacity: 1;*/
+    /*-webkit-animation: blink .7s infinite;*/
+    /*-moz-animation: blink .7s infinite;*/
+    /*animation: blink .7s infinite;*/
+    /*display: none;*/
+/*}*/
+

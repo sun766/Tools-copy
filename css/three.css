@@ -1,0 +1,44 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+    font-family: "新宋体";
+    color: #fff;
+}
+body,html {
+    background-color: #f6f6f6;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+a:hover {
+    color: #c81623;
+}
+
+img,input {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    outline-style: none;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    zoom: 1;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
